@@ -38,6 +38,7 @@ The project is executed in two stages: data generation and visualization.
 ```
 
 This executes three experiments: a general dataset comparison, a memory-impact study, and a robustness test against data skew.
+
 2. **Generate Plots**: Use the provided Python script to process `output.txt` and generate the visualization files (e.g., `exp1_barplot.png`, `exp3_alphaplot.png`):
 ```bash
 python3 plots.py
