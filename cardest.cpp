@@ -93,7 +93,7 @@ public:
         counters.assign(m, 0);
 
         double alpha;
-        switch (m) { // (TODO: VULL INVESTIGAR SI AQUEST CÀLCUL D'ALFA ÉS REALMENT CORRECTE O ÉS MILLOR LA FÓRMULA GENÈRICA) 
+        switch (m) {
             case 16: alpha = 0.673; break;
             case 32: alpha = 0.697; break;
             case 64: alpha = 0.709; break;
@@ -127,7 +127,7 @@ public:
 
         double E = alphaMM / sum_inv;
 
-        // Small range correction (TODO: VULL INVESTIGAR SI AQUESTA COSA ÉS REALMENT NECESSÀRIA)
+        // Small range correction
         if (E <= 2.5 * m) {
             int V = 0; // Count of zero counters
             for (int val : counters) {
