@@ -25,8 +25,6 @@ g++ -O3 cardest.cpp -o cardest
 
 ```
 
-*(The `-O3` flag is recommended to ensure the efficiency of high-volume stream processing.)*
-
 ---
 
 ### Execution
@@ -54,5 +52,5 @@ The execution produces several visual and textual outputs:
 
 * **`output.txt`**: A detailed report containing the average estimates, relative errors, and standard errors for both HyperLogLog and Recordinality across all test cases.
 * **Experiment 1 (Bar Plots)**: Visual comparison of estimation accuracy across various literary works and synthetic data.
-* **Experiment 2 (Line Plots)**: Analysis of how increasing memory (registers  or sample size ) reduces the standard error towards theoretical benchmarks.
-* **Experiment 3 (Line Plot)**: A chart demonstrating the robustness of both algorithms when processing skewed data streams (Zipfian ).
+* **Experiment 2 (Line Plots)**: Analysis of how increasing memory (registers  or sample size) reduces the standard error towards theoretical benchmarks.
+* **Experiment 3 (Line Plot)**: A chart demonstrating the robustness of both algorithms when processing skewed data streams (Zipfian).
